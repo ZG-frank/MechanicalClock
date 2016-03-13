@@ -1,0 +1,31 @@
+.mainwindow {
+  -webkit-perspective: 24000px;
+  -webkit-perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+.totalpagegroup {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+.pagegroup {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.page {
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 160px;
+  line-height: 160px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform-origin: bottom;
+  -webkit-transition: -webkit-transform 1s linear;
+  -webkit-transform: rotateX(90deg);
+}

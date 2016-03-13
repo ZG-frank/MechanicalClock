@@ -1,0 +1,44 @@
+@windowsWidth: 1200px;
+@windowsHeight: 200px;
+@clockpageWidth: 200px;
+@clockpageHeight: 200px;
+@clockpageFloat: left;
+@pagestyleSize:160px;
+@transform-origin : bottom;
+@transition: -webkit-transform 1s linear;
+@otherPagePosition: rotateX(90deg);
+
+.mainwindow{
+  -webkit-perspective: 24000px;
+  -webkit-perspective-origin: 50% 50%;
+  overflow:hidden;
+}
+
+.totalpagegroup{
+  width: @windowsWidth;
+  height: @windowsHeight;
+  margin:0 auto;
+  -webkit-transform-style: preserve-3d ;
+  position: relative;
+}
+
+.pagegroup{
+  width: @clockpageWidth;
+  height: @clockpageHeight;
+  float: @clockpageFloat;
+}
+
+.page{
+  width: @pagestyleSize;
+  height: @pagestyleSize;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: @pagestyleSize;
+  line-height: @pagestyleSize;
+  text-align: center;
+  position: absolute;
+  -webkit-transform-origin: @transform-origin;
+  -webkit-transition: @transition;
+  -webkit-transform: rotateX(90deg);
+}
